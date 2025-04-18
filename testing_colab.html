@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Halaman contoh Nindya</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <style>
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+    
+    @keyframes slideIn {
+      from { transform: translateY(-50px); opacity: 0; }
+      to { transform: translateY(0); opacity: 1; }
+    }
+    
+    @keyframes marquee {
+      0% { transform: translateX(100%); }
+      100% { transform: translateX(-100%); }
+    }
+    
+    .animate-fadeIn {
+      animation: fadeIn 1.5s ease-in;
+    }
+    
+    .animate-slideIn {
+      animation: slideIn 1s ease-out;
+    }
+    
+    .animate-marquee {
+      display: inline-block;
+      animation: marquee 15s linear infinite;
+      white-space: nowrap;
+    }
+    
+    .hover-scale:hover {
+      transform: scale(1.05);
+      transition: transform 0.3s ease;
+    }
+  </style>
+</head>
+<body class="bg-gradient-to-r from-blue-100 to-purple-100 min-h-screen">
+  <div class="marquee-container overflow-hidden bg-indigo-600 text-white py-2">
+    <span class="animate-marquee font-medium">✨ Ini yaa contoh Nindya - Silahkan telusuri halaman ini! ✨</span>
+  </div>
+  
+  <div class="container mx-auto p-4">
+    <div class="animate-slideIn bg-white rounded-lg shadow-lg p-8 mt-8">
+      <h1 class="text-4xl font-bold text-center text-indigo-700">
+        <span class="bg-clip-text text-transparent bg-gradient-to-r from-indigo-600 to-purple-600">
+          Halaman contoh Nindya
+        </span>
+      </h1>
+      <p class="text-center text-gray-700 mt-4 animate-fadeIn">Ini adalah halaman contoh dengan Tailwind CSS dan beberapa animasi menarik.</p>
+      
+      <div class="grid md:grid-cols-3 gap-6 mt-12">
+        <div class="bg-gradient-to-br from-blue-50 to-indigo-100 p-6 rounded-xl shadow hover-scale">
+          <div class="text-indigo-600 text-4xl mb-4">🚀</div>
+          <h3 class="font-bold text-lg text-indigo-800">Fitur Pertama</h3>
+          <p class="text-gray-600 mt-2">Deskripsi fitur pertama yang menarik dan bermanfaat.</p>
+        </div>
+        
+        <div class="bg-gradient-to-br from-purple-50 to-pink-100 p-6 rounded-xl shadow hover-scale">
+          <div class="text-purple-600 text-4xl mb-4">💡</div>
+          <h3 class="font-bold text-lg text-purple-800">Fitur Kedua</h3>
+          <p class="text-gray-600 mt-2">Deskripsi fitur kedua yang inovatif dan kreatif.</p>
+        </div>
+        
+        <div class="bg-gradient-to-br from-pink-50 to-red-100 p-6 rounded-xl shadow hover-scale">
+          <div class="text-pink-600 text-4xl mb-4">🎯</div>
+          <h3 class="font-bold text-lg text-pink-800">Fitur Ketiga</h3>
+          <p class="text-gray-600 mt-2">Deskripsi fitur ketiga yang menakjubkan.</p>
+        </div>
+      </div>
+      
+      <div class="mt-12 text-center">
+        <button class="bg-gradient-to-r from-indigo-600 to-purple-600 hover:from-indigo-700 hover:to-purple-700 text-white font-bold py-3 px-8 rounded-full shadow-lg transform transition hover:-translate-y-1">
+          Mulai Sekarang
+        </button>
+      </div>
+    </div>
+    
+    <footer class="mt-12 text-center text-gray-600 pb-8">
+      <p>© 2023 Nindya. Dibuat dengan ❤️</p>
+    </footer>
+  </div>
+</body>
+</html>
